@@ -1,0 +1,351 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-marron: rgb(51, 13, 13);
+    --color-rojo:rgb(209, 0, 0);
+    --color-negro:rgb(0,0,0);
+    --color-blanco:rgba(255, 255, 255, 0.87);
+    --color-amarillo:rgb(238, 255, 0);
+    --color-marronclaro:rgba(115,15,15,1);
+}
+
+body {
+    background-color: var(--color-rojo);
+    font-family: 'Cinzel Decorative', cursive;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-marron);
+    /*
+    background: linear-gradient(180deg, rgb(0, 0, 0) 5%, rgb(143, 42, 42) 100%, rgb(255, 255, 255) 100%);
+    */
+    background: linear-gradient(180deg, rgba(115,15,15,1) 0%, rgba(255,155,0,1) 100%);
+  }
+  
+  #nav-bar li {
+    list-style: none;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+ 
+  
+  #garantizamos{
+    font-size: 2rem;
+    color: var(--color-blanco);
+  }
+  
+  
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--color-marronclaro);
+    z-index: 2;
+  }
+  
+
+
+  
+
+  #header-img{
+    width: 100%;
+    height: 100%;
+    max-width: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+
+  nav {
+    font-weight: 400;
+  }
+  
+
+  nav > ul {
+    width: 600px;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative', cursive;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color-blanco);
+    border: none;
+    border-radius: 10px;
+    box-shadow:0px 0px 5px rgba(255, 255, 255, 0.815);
+  }
+  
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+    color: var(--color-blanco);
+  }
+  
+  #hero > h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+  
+  .container{
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  #features {
+    color: var(--color-blanco);
+  
+  }
+
+  #garantizamos{
+    margin-left: 65px;
+  }
+
+  #items{
+    display: flex;
+
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  #features .icon {
+    height: 100px;
+    font-size: 4rem;
+    color: var(--color-amarillo);
+  }
+  
+
+  #features .desc {
+    height: 125px;
+    width: 280px;
+    padding: 5px;
+  }
+  
+  #level{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 70px;
+  }
+
+
+  #productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    margin: 20px;
+    color: var(--color-blanco);
+  }
+
+  .level {
+    background-color: var(--color-marron);
+    border-radius: 15px 15px 0px 0px;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .descripcion-productos{
+    background-color: var(--color-marron);
+    border-radius: 0px 0px 15px 15px;
+    padding: 30px;
+    margin-top: -5px;
+    word-wrap: break-word;
+    height: 40%;
+    max-height: 450px;
+  }
+
+  #img-frutal{
+    width:350px;
+    height:350px;
+    padding: 5px;
+    box-shadow: 0px 0px 173px 27px var(--color-rojo);
+
+  }
+
+  #img-cabsha{
+    width:350px;
+    height:350px;
+    padding: 5px;
+    box-shadow: 0px 0px 173px 27px var(--color-rojo);
+  }
+
+  #img-lemonpie{
+    width:350px;
+    height:350px;
+    padding: 5px;
+    box-shadow: 0px 0px 173px 27px var(--color-rojo);
+  }
+
+  #precios{
+    margin: 120px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-blanco);
+    background-color: var(--color-marron);
+    border-radius: 15px 15px 15px 15px;
+    padding: 20px;
+
+  }
+
+  #precios-detalles{
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+
+  #precios-detalles li{
+    padding: 10px;
+  }
+
+  .form {
+    margin-top: 180px;
+    background-color: var(--color-marron);
+    padding: 50px;
+  }
+
+  .form > p{
+    color: var(--color-blanco);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+  }
+  
+  #form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ #email > input{
+   margin-bottom: 25px;
+   height: 30px;
+   width: 250px;
+ }
+
+ #submit > button{
+   width: 250px;
+   height: 70px;
+   margin: 20px;
+   font-size: 1.2rem;
+   background-color: #ff9b00;
+   color: var(--color-marronclaro);
+   font-weight: bold;
+ }
+
+ #contacto{
+   color: var(--color-blanco);
+ }
+  
+ #acerca{
+  color: var(--color-blanco);
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#acerca h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+#acerca p{
+  width: 70%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+
+ #footer{
+  align-self:flex-start;
+  margin-top:150px;
+}
+
+@media (max-width:1200px){
+  #productos{
+    flex-direction: column;
+  }
+ 
+}
+
+
+@media (max-width:1000px) {
+  #header{
+    flex-direction: column;
+
+  }
+  #nav-bar and #nav-bar ul{
+    width: 100%;
+  }
+}
+
+@media (max-width:800px) {
+  #items{
+    flex-direction: column ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .grid{
+    margin:20px;
+  }
+}
+
+@media (max-width:650px) {
+
+  #nav-bar ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #level{
+    margin-bottom: 150px;
+  }
+
+}
